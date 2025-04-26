@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block content %}
+<form>
+    <div class="mb-3">
+        <label for="autoMark" class="form-label">Марка автомобиля</label>
+        <input type="text" class="form-control" id="autoMark" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+        <label for="autoModel" class="form-label">Модель автомобиля</label>
+        <input type="text" class="form-control" id="autoModel">
+    </div>
+    <div class="mb-3">
+        <label for="autoYear" class="form-label">Год выпуска авто (1990-2025 г.в.)</label>
+        <input type="text" class="form-control" id="autoYear">
+    </div>
+    <button type="submit" class="btn btn-primary">Добавить автомобиль</button>
+</form>
+{% endblock %}
+
+
+
+
+
